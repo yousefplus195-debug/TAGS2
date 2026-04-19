@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>حلقة كرتون</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* صندوق الاشتراك */
+.telegram-box {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #ff00cc, #3333ff, #00ffcc);
+    border-radius: 25px;
+    padding: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255,0,200,0.7);
+    animation: crazy 2s infinite alternate;
+    transition: transform 0.2s;
+}
+
+.telegram-box:hover {
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.telegram-box span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000;
+}
+
+/* حركة مجنونة */
+@keyframes crazy {
+    0% { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
+}
+
+/* عنوان الحلقة */
+.episode-title {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #00ffea;
+    text-shadow: 2px 2px 0 #000;
+}
+
+/* الفيديو */
+.video-box {
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<!-- صندوق الاشتراك -->
+<div class="telegram-box" onclick="window.open('https://t.me/CARTOONYB','_blank')">
+    <span>🤪 اشترك يا عزيزي لو سمحت في قناتنا على التيليجرام من هنا 🚀</span>
+</div>
+
+<!-- عنوان الحلقة -->
+<div class="episode-title">
+🎬 الحلقة
+</div>
+
+<!-- مشغل الفيديو -->
+<div class="video-box">
+    <video controls>
+        <source src="https://ia800606.us.archive.org/31/items/TWOG-S2-Ep5-ARDub/%D8%B9%D8%A7%D9%84%D9%85%20%D8%BA%D8%A7%D9%85%D8%A8%D9%88%D9%84%20%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D8%AF%D9%87%D8%B4%20%D8%AD5%201080p.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو
+    </video>
+</div>
+
+</body>
+</html>
